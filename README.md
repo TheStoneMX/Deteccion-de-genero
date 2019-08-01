@@ -1,0 +1,2 @@
+# Detecci-n-de-g-nero
+El modelo keras se crea al entrenar SmallerVGGNet desde cero en alrededor de 2200 imágenes faciales (~ 1100 para cada clase). La región de la cara se recorta aplicando face detectionusando cvliblas imágenes recopiladas de Google Images. Obtuvo alrededor del 96% de precisión de entrenamiento y ~ 90% de precisión de validación. (20% del conjunto de datos se usa para la validación)
