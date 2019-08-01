@@ -1,7 +1,7 @@
 # Deteccion de genero
 El modelo keras se crea al entrenar SmallerVGGNet desde cero en alrededor de 2200 imágenes faciales (~ 1100 para cada clase). La región de la cara se recorta aplicando face detectionusando cvliblas imágenes recopiladas de Google Images. Obtuvo alrededor del 96% de precisión de entrenamiento y ~ 90% de precisión de validación. (20% del conjunto de datos se usa para la validación)
 Actualización:
-Verifique la funcionalidad de detección de género implementada en cvlib a la que se puede acceder a través de una sola llamada de función detect_gender().
+Verifique la funcionalidad de detección de género implementada en cvlib [cvlib](https://github.com/arunponnusamy/cvlib) a la que se puede acceder a través de una sola llamada de 'función detect_gender()'.
 
 ## Paquetes de Python
 numpy
@@ -30,15 +30,13 @@ $ python detect_gender.py -i <input_image>
 # cámara web
 $ python detect_gender_webcam.py
 
-Cuando ejecuta el script por primera vez, descargará el modelo previamente entrenado desde este enlace y lo colocará en el pre-traineddirectorio de la ruta actual.
-
-(Si el pythoncomando invoca Python 2.7 predeterminado, use python3en su lugar)
+(utilizar python3 ++)
 
 ## Salida de muestra:
 
 
 Formación
-Puede descargar el conjunto de datos que reuní de Google Images desde este enlace y capacitar a la red desde cero por su cuenta si está interesado. Puede agregar más imágenes y jugar con los hiperparámetros para experimentar diferentes ideas.
+Puede descargar el conjunto de datos que reuní de Google Images desde este enlace [link](https://s3.ap-south-1.amazonaws.com/arunponnusamy/datasets/gender_dataset_face.zip) y capacitar a la red desde cero por su cuenta si está interesado. Puede agregar más imágenes y jugar con los hiperparámetros para experimentar diferentes ideas.
 
 ## Paquetes adicionales
 scikit-learn
